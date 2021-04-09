@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{ 
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+} 
+
+.container {
+    height: 100%;
+    padding: 15px;
+    margin: 0px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+}
+
+.container > .header, .main, .footer {
+    color: black;
+    padding: 10px;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 35px;
+}
+
+.menu {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.main {
+    grid-area: m;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section-about {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.figcaption {
+    border-bottom: solid 1px black;
+}
+
+
+.footer {
+    grid-area: f;
+    text-align: right;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 42px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+h3, p {
+    font-size: 18px;
+}
+
+p{
+    margin: 20px 0px 30px 0px;
+}
+
+img{
+    width: 100%;
+}
+
+.client-list {
+    list-style-position: inside;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.footer p{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+button {
+    margin-top: 5px;
+    width: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Abel', sans-serif; 
+}
+
+form {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Abel', sans-serif;  
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 100px;
+        margin:100px 0px;
+    }
+
+
+    .section, .section-about{
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .section-about { 
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px auto;
+        width: 100%;
+    }
+
+    .section-about > .figcaption{
+        border-bottom:none;
+        padding-right: 30px;
+    }
+
+    .figure {
+        width: 100%;
+    }
+
+    .figcaption h2,h3,p {
+        width: 400px;
+    }
+
+    .figcaption p {
+        margin-bottom: 20px;
+    }
+
+    .section-about p {
+        width: 500px;
+    }
+
+    .section-about ul{
+        margin-bottom: 0px;
+    }
+
+    .footer p{
+        width: 100%;
+    }
+
+    .client-list{
+        margin: 0, auto;
+    }
+    
+    form{
+        width: 1024px;
+    }
+
+}
+
+
+/* volgende keer proberen om de tekst en de afbeelding allebij in een gelijknamig element te stoppen zodat ze 50% kunnen krijgen of weet ik veel volgens flex.*/ 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> ABOUT </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"> LISELOT JANSEN
+            <nav class="menu">
+                <li><a li href="index.html"> WORK </a></li>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h2> contact: </h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <!-- <form action="results.html" method="GET" enctype="multipart/form-data"> -->
+                <div>
+                    <label for="name">Naam:</label><br>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div>
+                    <label for="phone">Telefoonnummer:</label><br>
+                    <input type="tel" name="phone" id="phone" />
+                </div>
+
+
+                <div>
+                    <label for="bio">Bericht:</label><br>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <input type="hidden" name="hidden" value="hi" />
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>Liselot Jansen <br>
+                +31 6 30480424 <br>
+                info@Liselotjansen.com</p>
+        </footer>
+    </div>
+</body>
+
+</html>
